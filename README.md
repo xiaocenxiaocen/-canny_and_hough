@@ -1,2 +1,2 @@
-# -canny_and_hough
+# canny_and_hough
 learn canny operator and hough transform
