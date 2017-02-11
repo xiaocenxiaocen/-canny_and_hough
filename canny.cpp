@@ -526,12 +526,10 @@ inline bool operator<(const LineCount& __left, const LineCount& __right)
 	return __left.count > __right.count;
 }
 
-struct comp {
-	inline bool operator()(const LineCount& __left, const LineCount& __right)
-	{
+inline bool comp(const LineCount& __left, const LineCount& __right)
+{
 		return __left.count > __right.count;
-	}
-};
+}
 
 void houghLine(const Mat& edge, vector<Vec4i>& line, int threshold, int numLines, double dTheta = 1 / 180.0 * M_PI, double dRho = 1)
 {
